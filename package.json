@@ -1,6 +1,6 @@
 {
   "name": "mocha-yaml-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/mocha-yaml-loader.js",
   "repository": "https://github.com/strothj/mocha-yaml-loader.git",
   "author": "strothj <jason@jasons.io>",
