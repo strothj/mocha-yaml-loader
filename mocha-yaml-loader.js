@@ -1,3 +1,4 @@
+import fs from 'fs';
 import yaml from 'js-yaml';
 
 const DEFAULT_EXTENSIONS = [
@@ -20,7 +21,7 @@ const restore = () => {
 // https://github.com/bkonkle/ignore-styles/blob/master/ignore-styles.js
 // http://stackoverflow.com/questions/13752272/simple-require-extensions-example-not-working
 const yamlLoader = (module, filename) => {
-  const res = yaml.safeLoad(filename);
+  const res = yaml.safeLoad(fs.readFileSync(filename));
   module.exports = JSON.stringify(res, undefined, '\t'); // eslint-disable-line no-param-reassign
 };
 
