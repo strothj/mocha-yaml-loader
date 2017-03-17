@@ -1,0 +1,41 @@
+{
+  "name": "mocha-yaml-loader",
+  "version": "1.0.0",
+  "main": "lib/mocha-yaml-loader.js",
+  "repository": "https://github.com/strothj/mocha-yaml-loader.git",
+  "author": "strothj <jason@jasons.io>",
+  "license": "MIT",
+  "description": "Loads yaml files sourced by files being tested by mocha.",
+  "keywords": ["babel", "mocha", "yaml", "yml"],
+  "bugs": {
+    "url": "https://github.com/strothj/mocha-yaml-loader/issues"
+  },
+  "contributors": [
+    {
+      "name": "strothj",
+      "email": "jason@jasons.io",
+      "url": "https://jasons.io"
+    }
+  ],
+  "homepage": "https://github.com/strothj/mocha-yaml-loader",
+  "scripts": {
+    "build": "babel mocha-yaml-loader.js -d lib",
+    "test": "eslint mocha-yaml-loader.js && mocha",
+    "prepublish": "npm run build"
+  },
+  "engines":{
+    "node": ">=6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-env": "^1.2.2",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0"
+  },
+  "dependencies": {
+    "js-yaml": "^3.8.2"
+  }
+}
