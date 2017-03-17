@@ -6,6 +6,9 @@
   "author": "strothj <jason@jasons.io>",
   "license": "MIT",
   "description": "Loads yaml files sourced by files being tested by mocha.",
+  "files": [
+    "lib/*.js"
+  ],
   "keywords": [
     "babel",
     "mocha",
