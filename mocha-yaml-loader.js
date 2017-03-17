@@ -21,8 +21,8 @@ const restore = () => {
 // https://github.com/bkonkle/ignore-styles/blob/master/ignore-styles.js
 // http://stackoverflow.com/questions/13752272/simple-require-extensions-example-not-working
 const yamlLoader = (module, filename) => {
-  const res = yaml.safeLoad(fs.readFileSync(filename));
-  module.exports = JSON.stringify(res, undefined, '\t'); // eslint-disable-line no-param-reassign
+  // eslint-disable-next-line no-param-reassign
+  module.exports = yaml.safeLoad(fs.readFileSync(filename));
 };
 
 const register = (extensions = DEFAULT_EXTENSIONS, handler = yamlLoader) => {
