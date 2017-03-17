@@ -1,12 +1,17 @@
 {
   "name": "mocha-yaml-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/mocha-yaml-loader.js",
   "repository": "https://github.com/strothj/mocha-yaml-loader.git",
   "author": "strothj <jason@jasons.io>",
   "license": "MIT",
   "description": "Loads yaml files sourced by files being tested by mocha.",
-  "keywords": ["babel", "mocha", "yaml", "yml"],
+  "keywords": [
+    "babel",
+    "mocha",
+    "yaml",
+    "yml"
+  ],
   "bugs": {
     "url": "https://github.com/strothj/mocha-yaml-loader/issues"
   },
@@ -23,7 +28,7 @@
     "test": "eslint mocha-yaml-loader.js && mocha",
     "prepublish": "npm run build"
   },
-  "engines":{
+  "engines": {
     "node": ">=6"
   },
   "devDependencies": {
